@@ -8,8 +8,7 @@ This science-fiction soundscape is brought to you by the audio programming envir
 
 Audio example:
 
-<audio src="http://ericfairbanks.org/wordpress/wp-content/uploads/2012/10/space.mp3" controls></audio>
-
+<audio src="{{ site.baseurl }}/mp3/space.mp3"></audio>
 
 Code:
 

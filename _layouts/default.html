@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/default.css">
+    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <canvas id="headercanvas" height="104" width="1">Eric Fairbanks</canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 posts-sidebar">
+        </div>
+        <div class="col-md-9 main-content">
+          {{content}}
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/banner.js"></script>
+    <script type="text/javascript">
+      window.posts = [];
+      {% for post in site.posts %}
+        window.posts[window.posts.length] = {
+          title: '{{ post.title | escape }}',
+          url: '{{ post.url | prepend: site.baseurl }}',
+          date: new Date('{{ post.date | date_to_long_string }}')
+        };
+      {% endfor %}
+
+      window.TemporalPostsView = {};
+      window.TemporalPostsView.page = 0;
+      window.TemporalPostsView.postsPerPage = 5;
+      window.TemporalPostsView.render = function() {
+        for(var i=0; i<posts.length; i++) {
+          var post = posts[i];
+          var sidebar = '';
+          sidebar += '<div class="sidebar-post">';
+          sidebar +='<div class="sidebar-post-title">';
+          sidebar += '<a href="'+post.url+'">';
+          sidebar += post.title;
+          sidebar += '</a>';
+          sidebar += '</div>';
+          sidebar += '<div class="sidebar-post-date">';
+          var date = (post.date+'').split(' ');
+          sidebar += date[0]+' '+date[1]+' '+date[2]+', '+date[3];
+          sidebar += '</div>';
+          sidebar += '</div>';
+          $('div.posts-sidebar').append(sidebar);
+        }
+      };
+      window.TemporalPostsView.render();
+    </script>
+  </body>
+</html>

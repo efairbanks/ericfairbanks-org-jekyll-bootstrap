@@ -1,0 +1,45 @@
+body
+{
+  background-color: #000000;
+  color: #ffffff;
+  font-family:Arial;
+  padding-top: 10px;
+}
+
+#headercanvas
+{
+  position: static;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-post-title
+{
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+.sidebar-post-date
+{
+  margin-top: -9px;
+  margin-left: 15px;
+  font-size: 0.8em;
+  color: #eca;
+}
+
+a:link {
+  color:#ffffff;
+  text-decoration: none;
+}
+a:visited {
+  color:#ffffff;
+  text-decoration: none;
+ }
+ a:hover {
+   color: #ffffff;
+   text-decoration: none;
+}
+a:active {
+  color:#ffffff;
+  text-decoration: none;
+}

@@ -1,7 +1,0 @@
----
-title:  "Nice"
-date:   2016-09-07 17:01:00 -0400
-categories: woot
-layout: post
----
-This site is coming along nicely. I think I managed to get automated deployments from Github working using a cron job. Lets see if that works.

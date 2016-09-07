@@ -8,7 +8,7 @@ This science-fiction soundscape is brought to you by the audio programming envir
 
 Audio example:
 
-<audio src="{{ site.baseurl }}/mp3/space.mp3"></audio>
+<audio src="{{ site.url }}/mp3/space.mp3"></audio>
 
 Code:
 

@@ -1,7 +1,0 @@
----
-title:  "Test Post!"
-date:   2016-08-26 11:23:37 -0400
-categories: test
-layout: post
----
-Wow, this is definitely a test post!

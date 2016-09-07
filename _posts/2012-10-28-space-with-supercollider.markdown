@@ -8,7 +8,7 @@ This science-fiction soundscape is brought to you by the audio programming envir
 
 Audio example:
 
-http://ericfairbanks.org/wordpress/wp-content/uploads/2012/10/space.mp3
+<audio src="http://ericfairbanks.org/wordpress/wp-content/uploads/2012/10/space.mp3" controls></audio>
 
 Code:
 

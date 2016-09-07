@@ -21,6 +21,8 @@ url: "http://ericfairbanks.org" # the base hostname & protocol for your site
 twitter_username: sometimesmuic
 github_username:  efairbanks
 
+encoding: utf-8
+
 # Build settings
 markdown: kramdown
 theme: minima

@@ -6,6 +6,11 @@ body
   padding-top: 10px;
 }
 
+img
+{
+  width: 100%;
+}
+
 #headercanvas
 {
   position: static;
@@ -29,6 +34,7 @@ body
 {
   margin-top: 0.2em;
   margin-left: 1.2em;
+  margin-bottom: -1em;
   font-size: 0.8em;
   color: #eca;
 }

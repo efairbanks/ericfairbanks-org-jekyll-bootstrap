@@ -5,6 +5,10 @@ categories: music tidal supercollider code
 layout: post
 ---
 
+Here's a four minute hack session in Tidal, a Haskell DSL for musical pattern manipulation that interfaces with an implementation of Dirt (a powerful OSC sampler) written in SCLang. I've been learning me some Haskell and wading through the TidalCycles source. Here I've managed to add some custom effects to SuperDirt that give Tidal a much more authentic EDM feel.
+
+Shout out to the lovely folks over at the [TOPLAP Slack channel](https://toplap.org/toplap-on-slack/)! I would be lost without them.
+
 Audio example:
 
 <audio src="{{ site.baseurl }}/mp3/efairbanks_2016_03_25.mp3" controls></audio>

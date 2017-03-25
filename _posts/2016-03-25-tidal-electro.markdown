@@ -9,7 +9,9 @@ Audio example:
 
 <audio src="{{ site.baseurl }}/mp3/efairbanks_2016_03_25.mp3" controls></audio>
 
-SuperCollier Code:
+![Tidal &amp; SuperCollider]({{ site.baseurl }}/img/tidal_electro.png)
+
+SuperDirt Mixer Code:
 
 {% highlight smalltalk %}
 SuperDirt.start;
@@ -29,6 +31,8 @@ Ndef(\x, {
 });
 ) 
 {% endhighlight %}
+
+Tidal Script
 
 {% highlight haskell %}
 d1 $ density 2 $ s "[bd, <~ sn:6> hh:13]" # shape "0.7" # speed 1 # gain 0.7 # orbit 0

@@ -16,10 +16,12 @@
 title: Eric Fairbanks
 email: eric.p.fairabnks@gmail.com
 description: The personal website of Eric Fairbanks, creator of many weird and unnecessary audio gadgets.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/new" # the subpath of your site, e.g. /blog
 url: "http://ericfairbanks.org" # the base hostname & protocol for your site
 twitter_username: sometimesmuic
 github_username:  efairbanks
+
+encoding: utf-8
 
 # Build settings
 markdown: kramdown

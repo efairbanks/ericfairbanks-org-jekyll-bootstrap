@@ -58,7 +58,7 @@ function OnReady(){
 
       if (canvas.getContext){
         var ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.fillStyle = 'rgb(17,17,17)';
         ctx.fillRect( 0, 0, canvasw, canvash );
 
         for( var j = 0; j < imgh; j++ ){

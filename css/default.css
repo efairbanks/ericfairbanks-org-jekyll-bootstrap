@@ -1,7 +1,7 @@
 body
 {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #111;
+  color: #ccc;
   font-family:Arial;
   padding-top: 10px;
 }
@@ -36,7 +36,7 @@ img
   margin-left: 1.2em;
   margin-bottom: -1em;
   font-size: 0.8em;
-  color: #eca;
+  color: #ccc;
 }
 
 audio
@@ -45,18 +45,18 @@ audio
 }
 
 a:link {
-  color:#ffffff;
+  color:#f1fc88;
   text-decoration: none;
 }
 a:visited {
-  color:#ffffff;
+  color:#f1fc88;
   text-decoration: none;
  }
- a:hover {
-   color: #ffffff;
+a:hover {
+   color: #f1fc88;
    text-decoration: none;
 }
 a:active {
-  color:#ffffff;
+  color:#f1fc88;
   text-decoration: none;
 }

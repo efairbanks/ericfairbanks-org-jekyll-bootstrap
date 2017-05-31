@@ -5,12 +5,13 @@ categories: music tidal code
 layout: post
 ---
 
-## (via Haskell)
-### [or vice versa?]
+### (via Haskell)
+##### [or vice versa?]
 
-Note: This tutorial assumes some basic familiarity with the Tidal framework, as well as a functioning environment for executing Tidal code. (Atom + SuperDirt + GHCI recommended) For more information, check out http://tidalcycles.org .
+*Note:* _This tutorial assumes some basic familiarity with the Tidal framework, as well as a functioning environment for executing Tidal code. (Atom + SuperDirt + GHCI recommended) For more information, check out [tidalcycles.org](http://tidalcycles.org/)._
 
-Foreword: Tidal is a Haskell framework for creating, manipulating, and utilizing rhythmic patterns to create (primarily sonic) art. It also defines its own powerful, domain-specific language for defining patterns. Understanding the Haskell programming language is not necessary to use Tidal, but there are aspects of Haskell that are useful to understand when creating or performing with the Tidal framework.
+##### Foreword
+Tidal is a Haskell framework for creating, manipulating, and utilizing rhythmic patterns to create (primarily sonic) art. It also defines its own powerful, domain-specific language for defining patterns. Understanding the Haskell programming language is not necessary to use Tidal, but there are aspects of Haskell that are useful to understand when creating or performing with the Tidal framework.
 
 The goal of this tutorial is to explain those aspects of Haskell in a way that is simple and clear enough for non-programmers while still faithfully describing what is happening under the hood.
 

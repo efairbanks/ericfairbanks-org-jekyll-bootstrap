@@ -30,8 +30,6 @@ Do you hear a periodic thump? **Y** / **N**
 
 **Y:** Great! Let's move on.<br/>**N:** GOTO 0
 
----
-
 So, what's going on in the above line? Well, it's easiest to understand Haskell code (*Tidal especially*) by reading from right to left.
 
 On the far right, we have `"bd"`. This is a string, but it actually represents a Tidal pattern. This pattern contains a single event `bd` and will recur every cycle. If it were `"bd bd"`, which is also equivalent to `"[bd bd]"` (*the outer brackets are implied in Tidal for the sake of brevity and ease of use*), the pattern would contain two `bd` events that occur every cycle, evenly distributed throughout that cycle. In musical terms, it would be equivalent to two half notes.

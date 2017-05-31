@@ -5,7 +5,7 @@ categories: music tidal code
 layout: post
 ---
 
-# An Introduction to Tidal (via Haskell)
+## (via Haskell)
 ### [or vice versa?]
 
 Note: This tutorial assumes some basic familiarity with the Tidal framework, as well as a functioning environment for executing Tidal code. (Atom + SuperDirt + GHCI recommended) For more information, check out http://tidalcycles.org .

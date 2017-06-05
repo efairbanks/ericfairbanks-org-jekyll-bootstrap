@@ -178,6 +178,8 @@ do
 
 Alright, this is getting a bit out of hand. We probably don't need this much organization and labeling. That said, it's nice to know we can do stuff like this. Now if we want to modify the bass line, it's isolated to its own line, easily editable. If we wanted to remove the bass line from the stack, we only have to delete a single element from the list we've handed to stack and re-execute the block. This is certainly more verbose than what we started with in the beginning, but it's also more legible and more easily manipulated, which is especially useful if we're trying to perform with Tidal.
 
+---
+
 Hopefully this has given you some ideas regarding what you can do with functions. It is possible to leverage functions to re-use, modularize, and parameterize Tidal and Haskell code in ways that are much more powerful than what has been demonstrated here, but in order to do that we're going to have to learn a little bit more about Haskell and **a lot** more about Tidal.
 
 In the next tutorial, we'll be exploring the `#`, `|+|`, `|-|`, `|*|`, and `|/|` operators (which unlike `$` are specific to Tidal) as well as a new type of Haskell collection called a **tuple**. We'll also explore a new way of organizing Tidal ParamPatterns called `seqP` that will let us organize our ideas into specific segments of time specified by ranges of cycles, a tool that is very handy for organizing ideas and generating fully-realized compositions completely within Tidal.

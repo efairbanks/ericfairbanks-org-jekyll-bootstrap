@@ -27,6 +27,8 @@ d3 $ s "[bass:3*4]"
 d2 $ s "[[~ sn:3], [~ hh]*2]"
 ```
 
+<audio src="{{ site.baseurl }}/mp3/tidalectro.mp3" controls></audio>
+
 In the first line, we are calling a function `cps`, which is an acronym that stands for **cycles-per-second**. To set the tempo in **beats-per-minute**, we would usually divide a **BPM** value by 60 because there are 60 seconds in a minute. (*beats:* 130, *per:* /, *minute:* 60)
 
 However, you'll note that we're instead dividing by 120. Why? Well, I like working in double time because it prevents me from having to write patterns like `[~ sn ~ sn]` or `[~ sn]*2` and I can instead pretend that cycles are half measures and just write `[~ sn]` and `[bd bd]`. You can think of doubling the denominator as either halving the length of a cycle *or* doubling the tempo.

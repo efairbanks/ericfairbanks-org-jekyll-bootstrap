@@ -11,7 +11,7 @@ layout: post
 
 Take these lines, for instance:
 
-```
+```haskell
 -- If the following is confusing to you, you should check out:
 -- https://tidalcycles.org/patterns.html and read up on the Tidal pattern language.
 -- Also, these (lines beginning with two hyphens) are Haskell comments.
@@ -45,7 +45,7 @@ So why did I show you that chunk of code above? It's not like it's particularly 
 
 So how do we give the Haskell interpreter multiple instructions to execute simultaneously? We use a common programming language feature called a **control structure**, in this case Haskell's `do`.
 
-```
+```haskell
 do
   cps (130/120)
   d1 $ s "[bd bd]"
@@ -69,7 +69,7 @@ So what does this buy us? Well, Tidal provides us with some useful functions for
 
 With `stack` now in our toolbox, we can simplify that earlier do block.
 
-```
+```haskell
 do
   cps (130/120)
   d1 $ stack [s "[bd bd]", s "[bass:3*4]", s "[[~ sn:3], [~ hh]*2]"]
@@ -77,7 +77,7 @@ do
 
 This can also be written as:
 
-```
+```haskell
 do
   cps (130/120)
   d1 $ stack [s "[bd bd]",
@@ -120,7 +120,7 @@ The benefit of this is that we can have functions or do blocks that use the same
 
 If you managed to make it through all of that, then congratulations! Now we can get to the good stuff. Do you remember that convoluted example from what must seem like a few years back? Probably not, so here it is again in its ugliest form:
 
-```
+```haskell
 do
   cps (130/120)
   d1 $ stack [s "[bd bd]", s "[bass:3*4]", s "[[~ sn:3], [~ hh]*2]"]
@@ -128,7 +128,7 @@ do
 
 Without the knowledge we had earlier, we might try to simplify this by doing the following:
 
-```
+```haskell
 -- This ain't gonna work
 do
   cps (130/120)
@@ -140,7 +140,7 @@ do
 
 However, we now understand that we need to `let` these functions be defined the way they are above within the `do` block's scope. We can't use the non-`let` syntax that Haskell lets us get away with at the uppermost scope because we are working in a scope that is not the global scope. Instead we do this:
 
-```
+```haskell
 do
   cps (130/120)
   let bassDrum = s "[bd bd]"
@@ -151,7 +151,7 @@ do
 
 Oh snap! Now we're cooking with gas. In fact, we can go totally overboard with this:
 
-```
+```haskell
 do
   let houseTempo = 130
   cps (houseTempo/120)
@@ -164,7 +164,7 @@ do
 
 Oh, and we totally forgot, functions can take parameters in the form of *arguments*!
 
-```
+```haskell
 do
   let houseTempo = 130
   let tempoToCyclesPerSecond tempo = tempo/120

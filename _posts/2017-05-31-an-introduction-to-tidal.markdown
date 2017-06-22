@@ -40,7 +40,7 @@ Next there is `s`. In this case, `s` is a function. Functions are a shorthand fo
 
 Consider this Haskell function:
 
-```
+```haskell
 myFunction = 1 + 1
 ```
 
@@ -48,7 +48,7 @@ Pretty straightforward, right? Here, we are saying that `myFunction` is equal to
 
 Now consider this function:
 
-```
+```haskell
 myFunction a b = a + b
 ```
 
@@ -56,13 +56,13 @@ This function is just like the previous one, but it accepts two **arguments**, `
 
 Arguments work in much the same way. When you **call** a function that accepts arguments, Haskell knows to put the arguments you provide in the places you'd expect when replacing the function with its **definition**. Thus, a call to `myFunction` that looks like this:
 
-```
+```haskell
 myFunction 1 2
 ```
 
 ...would **evaluate** to this:
 
-```
+```haskell
 (1 + 2)
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "An Introduction to Tidal"
+title: "Tidal Tutorial Part 1: An Introduction to Tidal"
 date: 2017-05-31 17:00:00 -0400
 categories: music tidal code
 layout: post

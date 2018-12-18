@@ -2,30 +2,43 @@
 title: "Tidal Tutorial Part 4: Tidal 1.0 & MIDI-In" 
 ---
 
-## Internal Tidal Functions We Used:
+## The tutorial:
 
-### `cF`
+[![TIDAL 1.0 YISSS](https://img.youtube.com/vi/biynSrFygUo/0.jpg)](https://www.youtube.com/watch?v=biynSrFygUo)
+
+## Project files:
+
+[Download!](http://ericfairbanks.org/tidal_midi_harmony_tutorial.zip)
+
+## Internal Tidal functions we used:
+
+### **cF**
 **`cF` :: Double -> String -> Pattern Double**
+
 `cF`'s first argument is its default _(floating point)_ value. It's second argument is a string representing the OSC route that the subsequent values will be arriving on. It returns a `Pattern` of `Double`s. There is a similar function `cI` for integers that operates in the same way.
 
-### `cP`
+### **cP**
 **`cP` :: (Parseable a, Enumerable a) => Pattern a -> String -> Pattern a**
+
 `cP`'s first argument is its default value. It's second argument is a string representing the OSC route that the subsequent values will be arriving on. It returns a `Pattern`. It's used for `Pattern`s of strings, or `Pattern`s that would be represented as strings.
 
-## `fix`
+## **fix**
 **`fix`
 :: (ControlPattern -> ControlPattern) -> ControlPattern -> ControlPattern -> ControlPattern**
+
 `fix`'s first argument is a function that accepts a `Pattern` and returns a `Pattern`. Its second argument is a `Pattern` that will be compared with its third argument. It will apply the effects from the first argument to any elements in the `Pattern` provided in the third argument that match the `Pattern` supplied to the second argument.
 
-## `mono`
+## **mono**
 **`mono` :: Pattern a -> Pattern a**
+
 `mono`'s accepts a `Pattern` and returns a monophonic version of that `Pattern`.
 
-## `discretise`
+## **discretise**
 **`discretise` :: Pattern Time -> Pattern a -> Pattern a**
+
 `discretise` quantizes the `Pattern` supplied to its second argument in time according to the number/fraction of cycles provided to its first argument.
 
-## The Code:
+## The code:
 
 ```haskell
 do

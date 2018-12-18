@@ -6,7 +6,7 @@ title: "Tidal Tutorial Part 4: Tidal 1.0 & MIDI-In"
 
 [![TIDAL 1.0 YISSS](https://img.youtube.com/vi/biynSrFygUo/0.jpg =400x)](https://www.youtube.com/watch?v=biynSrFygUo)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/biynSrFygUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/biynSrFygUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
 ## Project files:
 

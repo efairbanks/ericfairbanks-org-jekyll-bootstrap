@@ -6,9 +6,7 @@ title: "Tidal Tutorial Part 4: Tidal 1.0 & MIDI-In"
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/biynSrFygUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
-## Project files:
-
-[Download!](http://ericfairbanks.org/tidal_midi_harmony_tutorial.zip)
+## [Project files](http://ericfairbanks.org/tidal_midi_harmony_tutorial.zip)
 
 ## Internal Tidal functions we used:
 

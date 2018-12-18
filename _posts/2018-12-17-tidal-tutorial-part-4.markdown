@@ -4,7 +4,7 @@ title: "Tidal Tutorial Part 4: Tidal 1.0 & MIDI-In"
 
 ## The tutorial:
 
-[![TIDAL 1.0 YISSS](https://img.youtube.com/vi/biynSrFygUo/0.jpg)](https://www.youtube.com/watch?v=biynSrFygUo)
+[![TIDAL 1.0 YISSS](https://img.youtube.com/vi/biynSrFygUo/0.jpg =400x)](https://www.youtube.com/watch?v=biynSrFygUo)
 
 ## Project files:
 

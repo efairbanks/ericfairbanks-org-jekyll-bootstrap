@@ -131,7 +131,7 @@ Good news. These examples of calling **functions** *are* **instructions**. That'
 
 > `--` starts a comment. Lua ignores text that follows `--`. It exists only to provide information to the programmer.
 
-```
+```lua
 -- I'm a program!
 print('how are you today?')
 print('I'm good')
@@ -151,7 +151,7 @@ We already know that a **function**, much like a **program**, is a series of ins
 
 Earlier we wrote a very simple **program** where we used `print` a bunch. How would we go about turning that into a **function**? Simple!
 
-```
+```lua
 function()
 -- I'm a program! ...well now I'm a function, actually.
 print('how are you today?')
@@ -166,7 +166,7 @@ So wait, in order to write a **function** you just put a bunch of **instructions
 
 But how do we call our **function**? Well, as we mentioned earlier, **functions** are a **type** of **value**, and they are called using *parentheses*. Armed with this knowledge, you might try to do this:
 
-```
+```lua
 function()
 -- I'm a program! ...well now I'm a function, actually.
 print('how are you today?')
@@ -179,7 +179,7 @@ That's...just not gonna work. It's not that this is _wrong_ per-se, it's just am
 
 How do we solve this ambiguity so that Lua knows what we're on about? Let's go back to algebra. In algebra, we use parentheses to solve problems when we an ambiguous order of operations. When programming, we do the same thing:
 
-```
+```lua
 (function()
 	-- I'm a program! ...well now I'm a function, actually.
 	-- Also adding more comments about how we're finally indenting
@@ -202,7 +202,7 @@ Just like when you *call* them, you specify **arguments** between the parenthese
 
 or
 
-```
+```lua
 function(x)
 	print(x+1)
 end
@@ -222,7 +222,7 @@ Perhaps it's obvious now, but to call our new **function** you just do...
 
 Similarly, you can do stuff like this:
 
-```
+```lua
 (function(a,b) print(a+b) end)(3,4) -- this prints 7
 
  -- the following prints 9
@@ -243,7 +243,7 @@ The answer becomes more clear when you look at `print(1+1)` as `print(add(1,1))`
 
 To better understand, let's write our own **function** that *returns* a **value**:
 
-```
+```lua
 function(x)
 	return(x+1)
 end
@@ -253,7 +253,7 @@ Okay, well that is straightforward enough. You can think of `return` as a **func
 
 Ok, so then how do we use our new **function**? Maybe it's obvious by now, maybe not:
 
-```
+```lua
 -- this evaluates to 3!
 (function(x)
 	return(x+1)
@@ -262,7 +262,7 @@ end)(2)
 
 But we're not really doing anything with the **value** `3` that the **function** call evaulates to. Depending on what you're using to run this code _(if anything)_, it may not like that you're not doing anything with the `return` **value**. But luckily we know how to print **values**!
 
-```
+```lua
 -- this prints 3!
 print((function(x)
 	return(x+1)
@@ -287,7 +287,7 @@ So far we've talked about `print` as if it is a function, but really, `print` is
 
 As for _setting_ variables, the _usual_ way is by using another *infix* operator- namely `=`. The `=` operator assumes whatever is to the *left* of it reperesents a **variable**. It *evaluates* everything to the *right* of it, takes the resulting **value**, and set the **variable** to the *left* of it to that **value**.
 
-```
+```lua
 -- examples
 myVariable = 1+1
 print(myvariable) -- this will print 2
@@ -321,7 +321,7 @@ That's an excellent question, and there's a perfectly reasonable answer: You've 
 
 For this to make sense, let's go over how to use **tables** quickly.
 
-```
+```lua
 -- creating and printing an empty table
 print({})
 
@@ -364,7 +364,7 @@ Remember earlier when we talked about *syntactic sugar*? If not, hit `<CTRL/CMD-
 
 By default, **variables** are *global*, meaning they are _elements of the global **environment**._ And that _global **environment**_ we're talking about? It's just itself a **variable** named `_G`. Don't believe me? Try evaluating these two lines:
 
-```
+```lua
 print(print)
 print(_G['print'])
 ```
@@ -373,7 +373,7 @@ Yeah, weird right? "But if variables are just elements in the global environment
 
 Yes, certainly. Try this:
 
-```
+```lua
 print(_G)
 print(_G['_G'])
 ```
@@ -402,7 +402,7 @@ Again, this is just *syntactic sugar* of a kind. The *local* **environment** is 
 
 To sum up, let's look at two identical **functions**, one where we *explicitly* use the *local* **environment**, and one where we use it *implicitly* with some *sugar*.
 
-```
+```lua
 -- normal add
 add=function(a,b)
 	local x=a+b
@@ -435,7 +435,7 @@ What, you're still here? I'm not kidding.
 
 Believe it or not, you've just been given the tools you need to do those things. You can easily implement conditional logic _(`if` statements)_ using **functions** and **tables**. Here's a function that prints `"foo"` if the input is `0` and `"bar"` if the input is `1`.
 
-```
+```lua
 foobar=function(input)
 	local jumpTable={}
 	jumpTable[0]=function() print("foo") end
@@ -448,7 +448,7 @@ Need to loop? Try a function that calls itself conditionally. Let's count from a
 
 > The `<` and `>` operators are less-than and greater-than. They return `true` if the statment is true `2>1` or `false` if the statement is false `2<1`.
 
-```
+```lua
 countToTen=function(n)
 	local jumpTable={}
 	jumpTable[true]=function() print(n); countToTen(n+1) end

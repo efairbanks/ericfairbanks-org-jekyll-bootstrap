@@ -1,5 +1,5 @@
 --
-title: "Programming 101 (with Lua)"
+title: "Programming 101 /w Lua"
 date: 2020-04-16 17:28:00 -0400
 categories: cybing lua tutorial coding programming intro
 layout: post

@@ -5,7 +5,7 @@ categories: cybing lua tutorial coding programming intro
 layout: post
 ---
 
-Today we're going to learn how to write and understand computer programs written in Lua, which is the language [Cybin](github.com/efairbanks/cybin) uses under the hood to make cool sounds *(and other things)* happen!
+Today we're going to learn how to write and understand computer programs written in Lua, which is the language [Cybin](http://github.com/efairbanks/cybin) uses under the hood to make cool sounds *(and other things)* happen!
 
 ## Table of Contents
 * **Building Blocks**: What are the most basic elements we can use to write a computer program?
@@ -35,7 +35,7 @@ In Lua *(and pretty much every other language)*, **types** of things are referre
 | boolean | `true`, `false` |
 | function | `print`, `+`, `-`, `/`, `*`, `..`, `=`, `function(x) return x+1 end` |
 
-Ok, so we've got a list of the **types** of things we can have, and we have some examples of what particular instances, or **values**, of these types of things look like. Unfortunately, we still have no idea how to arrange them in such a way that they cause a computer to *do* something with them.
+<br/>Ok, so we've got a list of the **types** of things we can have, and we have some examples of what particular instances, or **values**, of these types of things look like. Unfortunately, we still have no idea how to arrange them in such a way that they cause a computer to *do* something with them.
 
 In short, we don't know how to *instruct* our computer to do something meaningful with our **types** and **values**.
 

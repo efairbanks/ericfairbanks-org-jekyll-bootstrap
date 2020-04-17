@@ -7,6 +7,8 @@ layout: post
 
 Today we're going to learn how to write and understand computer programs written in Lua, which is the language [Cybin](http://github.com/efairbanks/cybin) uses under the hood to make cool sounds *(and other things)* happen!
 
+> I'll be recording a companion video where I demonstrate this code in Cybin, but in the meantime feel free to follow along by running code on [repl.it](https://repl.it/languages/lua)!
+
 ## Table of Contents
 * **Building Blocks**: What are the most basic elements we can use to write a computer program?
 * **Instructions**: Ok, so we have a bunch of stuff we can use to write a computer program, what does that mean?

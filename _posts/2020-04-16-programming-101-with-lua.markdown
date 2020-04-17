@@ -398,26 +398,19 @@ The benefit of this is that we can then create and use **variables** *inside* a 
 
 For instance, if we had a variable `x` in the *global* **environment** and we set a variable called `x` in our *local* **environment** we might not be considering that we are also modifying `x` *everywhere else*. Maybe we *want* to do that. Probably, we don't.
 
-In Lua, if you want to set a *local* **variable**, you just put `local ` in front. So:
+In Lua, if you want to set a *local* **variable**, you just put `local` in front. So:
 
 `local a = 10`
 
 The *local* **environment** is a **table**, just like the *global* **enviroment**. If you want to get the *local* **environment** of a **function**, you can use the special **function** `getfenv`.
 
-To sum up, let's look at two identical **functions**, one where we *explicitly* use the *local* **environment**, and one where we use it *implicitly*.
+Let's look at an example where we use a local variable in a function.
 
 ```lua
--- normal add
 add=function(a,b)
-	local x=a+b
+	local x -- here we declare that x is a local variable
+  x=a+b
 	return x
-end
-
--- diet add
-add=function(a,b)
-  local x
-	getfenv()['x']=a+b
-	return getfenv()['x']
 end
 
 -- global x (different from the local x)
@@ -425,8 +418,6 @@ x = 1337
 print(add(1,1)) -- prints 2
 print(x) -- prints 1337 (global x is unchanged)
 ```
-
-As you can see, the low-sugar version is uglier *and* _(arguably)_ equally confusing, if not moreso. Just use `local`. It's good.
 
 ## Wrapping Up
 

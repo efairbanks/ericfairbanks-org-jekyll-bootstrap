@@ -178,7 +178,7 @@ function OnReady(){
             // --- //
             
             case 3:
-            if( frame % 5 == 0 ){
+            if( frame % 45 == 0 ){
                 for( var j = 0; j < imgh; j++ ){
                     for( var i = 0; i < imgw; i++ ){
                         var cell = conwayback[i + j*imgw];

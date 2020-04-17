@@ -44,6 +44,14 @@ audio
   margin-bottom: 0.8em;
 }
 
+table {
+  width: 100%;
+}
+
+th, td {
+  padding 10px 50px;
+}
+
 a:link {
   color:#f1fc88;
   text-decoration: none;

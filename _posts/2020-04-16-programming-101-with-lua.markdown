@@ -445,6 +445,8 @@ foobar=function(input)
 	jumpTable[1]=function() print("bar") end
 	jumpTable[input]()
 end
+foobar(0)
+foobar(1)
 ```
 
 Need to loop? Try a function that calls itself conditionally. Let's count from any number below `10` to `10`.
@@ -458,6 +460,7 @@ countToTen=function(n)
 	jumpTable[false]=function() end
 	jumpTable[n<11]()
 end
+countToTen(0)
 ```
 
 Of course, tools _(control structures, they're called)_ like `while` and `if` and `for` offer *easier* ways to do these things, but you don't *need* them.

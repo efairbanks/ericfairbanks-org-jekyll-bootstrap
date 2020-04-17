@@ -137,7 +137,7 @@ Good news. These examples of calling **functions** *are* **instructions**. That'
 -- I'm a program!
 print('how are you today?')
 print("I'm good")
-print("let's count: ');print(1);print(2);print(3)
+print("let's count: ");print(1);print(2);print(3)
 ```
 Well shoot- now we've written a program. Neat! It's really that simple. Granted, we only know about algebraic functions and `print` at the moment, so there's not a whole lot we can *do*. Let's work on that.
 

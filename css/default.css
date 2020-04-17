@@ -48,8 +48,13 @@ table {
   width: 100%;
 }
 
+th {
+  border-bottom: 1px solid grey;
+}
+
 th, td {
-  padding 10px 50px;
+  padding: 10px 50px;
+  margin: 10px;
 }
 
 a:link {

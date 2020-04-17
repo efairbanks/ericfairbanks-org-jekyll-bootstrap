@@ -28,7 +28,7 @@ For simplicity's sake, let's call these building blocks *things*. So, much like 
 
 In Lua *(and pretty much every other language)*, **types** of things are referred to as...**types**. Not very creative, but straightforward. Specific *things* in *particular* are referred to as **values**. 
 
-| Type <br> *(of thing)* | Value <br> *(of thing)* |
+| Type *(of thing)* | Value *(of thing)* |
 | ----- | -------- |
 | number | `1`, `2.0`, `-1000`, `0.33333333` |
 | string | `"hello"`, `'this is a test'`, `"a"` |

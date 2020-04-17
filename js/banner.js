@@ -250,7 +250,7 @@ function OnReady(){
 
         draw();
         setTimeout(FrameCallback, 1000/framerate);
-        
+        frame++;
     }
     
     // ---- //

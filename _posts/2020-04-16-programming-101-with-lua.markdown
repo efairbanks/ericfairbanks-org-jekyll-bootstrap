@@ -134,8 +134,8 @@ Good news. These examples of calling **functions** *are* **instructions**. That'
 ```lua
 -- I'm a program!
 print('how are you today?')
-print('I'm good')
-print('let's count: ');print(1);print(2);print(3)
+print("I'm good")
+print("let's count: ');print(1);print(2);print(3)
 ```
 Well shoot- now we've written a program. Neat! It's really that simple. Granted, we only know about algebraic functions and `print` at the moment, so there's not a whole lot we can *do*. Let's work on that.
 
@@ -155,8 +155,8 @@ Earlier we wrote a very simple **program** where we used `print` a bunch. How wo
 function()
 -- I'm a program! ...well now I'm a function, actually.
 print('how are you today?')
-print('I'm good')
-print('let's count: ');print(1);print(2);print(3)
+print("I'm good")
+print("let's count: ");print(1);print(2);print(3)
 end
 ```
 
@@ -170,8 +170,8 @@ But how do we call our **function**? Well, as we mentioned earlier, **functions*
 function()
 -- I'm a program! ...well now I'm a function, actually.
 print('how are you today?')
-print('I'm good')
-print('let's count: ');print(1);print(2);print(3)
+print("I'm good")
+print("let's count: ");print(1);print(2);print(3)
 end() -- look we're calling it with parentheses!
 ```
 
@@ -186,8 +186,8 @@ How do we solve this ambiguity so that Lua knows what we're on about? Let's go b
 	-- the inside of the function so it's easier to read.
 	-- Doesn't this look nicer?
 	print('how are you today?')
-	print('I'm good')
-	print('let's count: ');print(1);print(2);print(3)
+	print("I'm good")
+	print("let's count: ");print(1);print(2);print(3)
 end)() -- look we're calling it with parentheses!
 ```
 Admittedly, this is weird. Since we haven't learned how to keep track of **values** yet, we have to call our **function**'s **value** directly. This is not particularly useful. The next section will address this, but first let's learn a few final things about **functions**.
@@ -224,7 +224,9 @@ Similarly, you can do stuff like this:
 
 ```lua
 (function(a,b) print(a+b) end)(3,4) -- this prints 7
+```
 
+```lua
  -- the following prints 9
 (function(a,b,c)
 	print(a*(b+c))
@@ -398,9 +400,9 @@ In Lua, if you want to set a *local* **variable**, you just put `local ` in fron
 
 `local a = 10`
 
-Again, this is just *syntactic sugar* of a kind. The *local* **environment** is indeed a **table**, just like the *global* **enviroment**. If you want to get the *local* **environment** of a **function**, you can use the special **function** `getfenv`.
+The *local* **environment** is a **table**, just like the *global* **enviroment**. If you want to get the *local* **environment** of a **function**, you can use the special **function** `getfenv`.
 
-To sum up, let's look at two identical **functions**, one where we *explicitly* use the *local* **environment**, and one where we use it *implicitly* with some *sugar*.
+To sum up, let's look at two identical **functions**, one where we *explicitly* use the *local* **environment**, and one where we use it *implicitly*.
 
 ```lua
 -- normal add
@@ -411,6 +413,7 @@ end
 
 -- diet add
 add=function(a,b)
+  local x
 	getfenv()['x']=a+b
 	return getfenv()['x']
 end

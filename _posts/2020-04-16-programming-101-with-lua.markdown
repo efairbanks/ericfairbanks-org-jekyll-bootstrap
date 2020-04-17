@@ -402,15 +402,22 @@ In Lua, if you want to set a *local* **variable**, you just put `local` in front
 
 `local a = 10`
 
+Or you can declare that the **variable** is **local** ahead of time and then use it as normal:
+
+```lua
+local a
+a = 10
+```
+
 The *local* **environment** is a **table**, just like the *global* **enviroment**. If you want to get the *local* **environment** of a **function**, you can use the special **function** `getfenv`.
 
 Let's look at an example where we use a local variable in a function.
 
 ```lua
 add=function(a,b)
-	local x -- here we declare that x is a local variable
+  local x -- here we declare that x is a local variable
   x=a+b
-	return x
+  return x
 end
 
 -- global x (different from the local x)
